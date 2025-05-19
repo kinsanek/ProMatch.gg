@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crie a sua conta - ProMatch.gg</title> <!--Título do Site-->
+    <link rel="icon" href="img/logo.png" type="image/png"><!--Icone do Site-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css"> <!--Link da estilização-->
+    <link rel="stylesheet" href="css/cadastro.css">
+    <script defer src="js/index.js"></script> <!--Link do Script-->
+    <script defer src="js/cadastro.js"></script>
+</head>
+<body>
+    <div class="topo-site"> <!--Cabeçalho-->
+        <a href="index.html"><img class="logo" src="img/logo.png" alt="Logo do Site"></a>
+        <div>
+            <nav class="jogo"><!--Menu de opção de jogo da preferência do usuário-->
+                <a class="selecao-jogo" href="valorant.html">Valorant</a>
+                <a class="selecao-jogo" href="#">League of Legends</a>
+                <a class="selecao-jogo" href="#">Rainbow Six</a>
+                <a class="selecao-jogo" href="#">Counter-Strike</a>
+            </nav>
+            <div class="conexoes"><!--Menu de Login-->
+                <button class="login_btn" id="loginBtn"><a href="login.html">ENTRAR</a></button>
+                <button class="cadastro_btn" id="cadastroBtn"><a href="cadastro.html">CRIAR CONTA</a></button>
+                <div id="userInfo" class="user-info" style="display: none;">
+                    <img src="#" alt="Foto de Perfil" id="userPhoto" class="foto-de-perfil" style="width: 40px; height: 40px; border-radius: 50%;">
+                    <span id="username" style="color: white;"></span>
+                    <button id="logoutBtn"><i class="fa-solid fa-right-from-bracket"></i> Fazer Logout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="cadastro-main">
+        <section class="form-cadastro">
+            <h3>Crie a Sua Conta Agora!</h3>
+            <form id="cadastro-form">
+                <input type="text" placeholder="Digite Seu Nome Completo" name="nome" id="nome" class="form-input" required>
+                <input type="text" placeholder="Digite seu Nome de Usuário" name="username" id="user-name" class="form-input" required>
+                <input type="email" placeholder="Digite seu Email" name="Email" id="email" class="form-input" required>
+                <input type="password" placeholder="Digite a sua senha" name="senha" id="senha" class="form-input" required>
+                <input type="url" id="foto" placeholder="URL da foto de perfil (opcional)" class="form-input">
+                <button type="submit" id="submit" class="form-input-btn">Criar Conta</button>
+            </form>
+            <a href="login.html">Já Possui uma Conta? Faça Login</a>
+        </section>
+    </div>
+</body>
