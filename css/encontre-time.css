@@ -1,0 +1,97 @@
+.encontre-time-main{
+    margin-top: 24px;
+}
+
+.botao-encontre-times{
+    flex-direction: column;
+    display: flex;
+    gap:10px;
+    margin-top: 100px;
+    position: fixed;
+}
+
+.encontre-time-btn{
+    background-color: #398da5;
+    color:white;
+    font-family: 'Kanit',sans-serif;
+    font-size: 24px;
+    border:none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.encontre-time-btn:hover{
+    background-color: #3e6d7a;
+    transform: scale(0.9);
+    transition: 0.3s;
+}
+
+.encontre-card{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #222;
+    min-height: 300px;
+    max-width: 1280px;
+    padding: 15px 0;
+    margin: 15px 0;
+    margin-left : calc(250px + 32px);
+}
+
+.encontre-card>div{
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-time{
+    margin: 20px 0;
+    width: 33%;
+    padding: 20px;
+}
+
+.logo-time img{
+    width: 70%;
+}
+
+.nick-jogador{
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.jogador{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #398da5;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 10px;
+    position: relative;
+    min-width: 300px;
+    word-wrap: break-word;
+}
+
+.jogador i {
+    position: absolute;
+    left: 10px;
+}
+
+.jogador span {
+    flex: 1;
+    text-align: center;
+}
+
+.foto-bg{
+    margin:30px 0;
+    width: 33%;
+    padding: 20px;
+}
+
+.foto-jogo{
+    border-radius: 18px;
+}

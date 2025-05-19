@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+#main-jogo{
+    padding-top:40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:white;
+}
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 100%;
+    background-color:#263438;
+    font-family: "Kanit", serif ;
+}
+
+.topo-site{
+    background-color:#364A50 ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 70px;
+    border-bottom:1px solid white;
+    margin-bottom:5px;
+    
+}
+
+.topo-site>div{
+    display:flex;
+    align-items: center;
+    gap:50px;
+}
+
+.logo{
+    width: 80px;
+}
+
+.logo:hover{
+    transform:scale(0.9) rotate(2deg);
+    transition:0.3s;
+}
+
+.jogo{
+    display: flex;
+    gap:25px;
+    
+}
+
+.selecao-jogo{
+    text-decoration: none;
+    color: white;
+}
+
+.selecao-jogo:hover{
+    color: lightgray;
+    transition: 0.2s;
+}
+
+.conexoes{
+    display: flex;
+    gap:12px;
+}
+
+.conexoes > button{
+    padding: 5px 20px;
+    border-radius:5px;
+    font-family: "Kanit", serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 15px;
+    border:none;
+}
+
+.conexoes a{
+    text-decoration:none;
+    color:white;
+}
+
+.login_btn{
+    background-color:#2A2D40;
+    color: white;
+    cursor: pointer;
+}
+
+.login_btn:hover{
+    transform: scale(0.95) rotate(1deg);
+    transition: 0.3s;
+    background-color:#3e6d7a;
+    border: 3px solid #2a2d40
+}
+
+.cadastro_btn{
+    background-color:#398DA5;
+    color: white;
+    cursor: pointer;
+}
+
+.cadastro_btn:hover{
+    transform: scale(0.95) rotate(1deg);
+    transform-origin: center;
+    transition: 0.3s;
+    background-color: #3e6d7a;
+    border: 3px solid #398DA5;
+}
+
+#featured{
+    position: relative;
+
+}
+
+.main-content{
+    margin-left:calc(260px + 20px);
+  }
+
+.side-bar{
+    position: fixed;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:260px;
+    height:730px;
+    border-radius: 0px 18px 18px 0px;
+    padding: 20px;
+}
+
+#side-items{
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+    list-style:none;
+}
+
+.side-bar-item{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.side-bar-item a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 14px;
+    border-radius: 8px;
+}
+
+.side-bar-item.ativo{
+    background-color:#3e6d7a;
+}
+.side-bar-item.ativo a{
+    color:white;
+}
+
+.side-bar-item.ativo:hover{
+    background-color:#25aacf;
+}
+
+.side-bar-item:hover{
+    background-color: aliceblue;
+    transform: scale(1.1);
+    transition: 0.1s;
+}
+
+.side-bar-item a{
+    display: flex;
+    align-items:center;
+    gap:14px;
+    text-decoration: none;
+    color:black;
+}
+
+#rodape{
+    border-top: 1px solid gray;
+    padding:12px
+}
+
+#main{
+    color:white;
+}
+
+#texto-escolha{
+    margin-top: 50px;
+    font-weight: 300;
+    text-align: center;
+}
+
+#main h1{
+    margin:25px;
+    margin-bottom:5px;
+}
+
+#main h2{
+    margin:25px;
+    margin-top:5px;
+}
+
+#main-jogos{
+    display: grid;
+    grid-template-columns: repeat(4,minmax(0,1fr));
+    gap: 12px;
+    padding:24px;
+}
+
+.jogos-box{
+    width:100%;
+    height:110%;
+    padding:0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    border-radius:18px 0px 18px 0px;
+    background-color:#364A50;
+}
+
+.foto-bg{
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+    position: relative;
+    border-radius:18px 0px 18px 0px;
+}
+
+.foto-jogo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 18px 0 18px 0;
+}
+
+.jogos-box h3{
+    font-weight: 300;
+}
+
+.jogos-box:hover img{
+    transform:scale(1.2);
+}
+
+.user-info{
+    gap:8px;
+    align-items: center;
+}
+
+
+.user-info button{
+    padding: 15px;
+    border:none;
+    border-radius: 10px;
+    color: white;
+    background-color: #2A2D40;
+    font-family: 'Kanit', sans;
+    font-family: 16px ;
+}
+
+.user-info button:hover{
+    background-color: red;
+    cursor: pointer;
+}
