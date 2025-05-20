@@ -1,0 +1,62 @@
+.main-assinaturas{
+    display:flex;
+    gap: 32px;
+}
+
+.card-assinatura {
+    min-height: 350px;
+    background-color: whitesmoke;
+    padding: 20px 10px;
+    color: black;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-assinatura ul{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.card-assinatura li{
+    list-style: none;
+}
+
+.card-assinatura>div{
+    text-align: left;
+    width: 95%;
+    height: 20%;
+    padding: 0 10px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.card-assinatura.bronze>div{
+    background-color: #cd7f32;
+}
+
+.card-assinatura.prata>div{
+    background-color: #c0c0c0;
+}
+
+.card-assinatura.ouro>div{
+    background-color: #ffd700;
+}
+
+.assinarBtn{
+    width: 90%;
+    height: 10%;
+    border: none;
+    background-color: #3e6d7a;
+    border-radius: 5px;
+    cursor:pointer;
+    color: white;
+    margin: 0 auto;
+}
+
+.assinarBtn:hover{
+    background-color: #25aacf;
+}
