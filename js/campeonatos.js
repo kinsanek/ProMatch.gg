@@ -31,10 +31,10 @@ function criarCampeonato(){
     }
 
     const imagens = {
-        "Valorant": "../img/valorant.png/",
-        "League of Legends": "../img/lol.webp/",
-        "Rainbow Six": "../img/r6.webp/",
-        "Counter-Strike": "../img/cs.jpg/",
+        "Valorant": "/../img/valorant.png",
+        "League of Legends": "../img/lol.webp",
+        "Rainbow Six": "../img/r6.webp",
+        "Counter-Strike": "../img/cs.jpg",
     };
 
     const imagemSrc = imagens[modalidade] || "default.jpg";
