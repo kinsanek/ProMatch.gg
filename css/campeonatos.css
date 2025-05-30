@@ -217,3 +217,12 @@
 .campeonatos-card:hover img{
     transform:scale(1.2);
 }
+
+.edit{
+    background-color:#398da5;
+    border: 1.5px solid #000;
+}
+
+.edit-cancel{
+    border: 1.5px solid #000;
+}
