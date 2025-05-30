@@ -88,6 +88,28 @@
                     </div>
                 </div>
             </div>
+
+            <div class="popup" id="formulario-editar">
+                <div class="popup-content">
+                    <span class="close" onclick="fecharFormularioEditar()">&times;</span>
+                    <h2>Editar Campeonato</h2>
+                    <input type="text" id="nome-campeonato-editar" placeholder="Nome do Campeonato">
+                    <select id="modalidade-editar">
+                        <option value="Valorant">Valorant</option>
+                        <option value="League of Legends">League of Legends</option>
+                        <option value="Rainbow Six">Rainbow Six</option>
+                        <option value="Counter-Strike">Counter-Strike</option>
+                    </select>
+                    <input type="date" id="dataInicio-editar">
+                    <input type="time" id="horaInicio-editar">
+                    <input type="number" id="maxTimes-editar" placeholder="Máximo de Times">
+                    <div class="popup-buttons">
+                        <button class="popup-btn" onclick="salvarEdicao()">Salvar Alterações</button>
+                        <button class="popup-btn cancel" onclick="fecharFormularioEditar()">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+
             <div class="campeonatos" id="campeonatos"></div>
             
         </div>
