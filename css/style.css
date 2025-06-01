@@ -311,11 +311,19 @@ body{
     padding-left: 7px;
 }
 
-.noticia-foto {
-
-}
-
 .noticia-foto img {
     height: 75px;
     border-radius: 0 10px 10px 0;
+}
+
+.foto-de-perfil.assinatura-bronze{
+    border: 3px solid #CD7F32;
+}
+
+.foto-de-perfil.assinatura-prata{
+    border: 3px solid #C0C0C0;
+}
+
+.foto-de-perfil.assinatura-ouro{
+    border: 3px solid #FFD700;
 }
