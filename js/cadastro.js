@@ -6,12 +6,11 @@ document.getElementById("cadastro-form").addEventListener("submit", function(e) 
     const email = document.getElementById("email").value;
     const senha = document.getElementById("senha").value;
     const foto = document.getElementById("foto").value || "../img/default-avatar.png";
+    const assinatura = "Nenhuma"
 
-    const usuario = { nome, username, email, senha, foto };
+    const usuario = { nome, username, email, senha, foto, assinatura };
 
     localStorage.setItem("usuarioCadastrado", JSON.stringify(usuario));
-
-    console.log(usuario);
 
     alert("Cadastro realizado com sucesso!");
     window.location.href = "login.html";
