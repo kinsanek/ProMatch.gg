@@ -275,6 +275,7 @@ body{
 }
 
 #noticias {
+  margin-top:15px;
   width: 60%;
   background-color:#263438;
 }
