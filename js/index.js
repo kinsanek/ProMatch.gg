@@ -16,3 +16,19 @@ if (usuario) {
         location.reload();
     })
 }
+
+function ajustarEscala() {
+    const baseWidth = 1879;
+    const baseHeight = 932;
+
+    const escalaLargura = window.innerWidth / baseWidth;
+    const escalaAltura = window.innerHeight / baseHeight;
+
+    // Usa o menor dos dois para manter proporção
+    const escalaFinal = Math.min(escalaLargura, escalaAltura);
+
+    document.documentElement.style.setProperty('--scale', escalaFinal);
+  }
+
+  ajustarEscala();
+  window.addEventListener('resize', ajustarEscala);
