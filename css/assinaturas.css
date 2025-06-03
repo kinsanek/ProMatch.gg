@@ -60,3 +60,9 @@
 .assinarBtn:hover{
     background-color: #25aacf;
 }
+
+.reject{
+ background-color: red;
+ color:white;
+ border-radius: 5px;
+}
