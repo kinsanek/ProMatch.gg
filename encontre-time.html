@@ -12,320 +12,318 @@
     <script defer src="js/scroll-eut.js"></script>
 </head>
 <body>
-    <div id="app">
-        <div class="topo-site"> <!--Cabeçalho-->
-            <a href="index.html"><img class="logo" src="img/logo.png" alt="Logo do Site"></a>
-            <div>
-                <nav class="jogo"><!--Menu de opção de jogo da preferência do usuário-->
-                    <a class="selecao-jogo" href="valorant.html">Valorant</a>
-                    <a class="selecao-jogo" href="lol.html">League of Legends</a>
-                    <a class="selecao-jogo" href="r6.html">Rainbow Six</a>
-                    <a class="selecao-jogo" href="cs.html">Counter-Strike</a>
-                </nav>
-                <div class="conexoes"><!--Menu de Login-->
-                    <button class="login_btn" id="loginBtn"><a href="login.html">ENTRAR</a></button>
-                    <button class="cadastro_btn" id="cadastroBtn"><a href="cadastro.html">CRIAR CONTA</a></button>
-                    <div id="userInfo" class="user-info" style="display: none;">
-                        <img src="#" alt="Foto de Perfil" id="userPhoto" class="foto-de-perfil" style="width: 40px; height: 40px; border-radius: 50%;">
-                        <span id="username" style="color: white;"></span>
-                        <button id="logoutBtn"><i class="fa-solid fa-right-from-bracket"></i> Fazer Logout</button>
-                    </div>
+    <div class="topo-site"> <!--Cabeçalho-->
+        <a href="index.html"><img class="logo" src="img/logo.png" alt="Logo do Site"></a>
+        <div>
+            <nav class="jogo"><!--Menu de opção de jogo da preferência do usuário-->
+                <a class="selecao-jogo" href="valorant.html">Valorant</a>
+                <a class="selecao-jogo" href="lol.html">League of Legends</a>
+                <a class="selecao-jogo" href="r6.html">Rainbow Six</a>
+                <a class="selecao-jogo" href="cs.html">Counter-Strike</a>
+            </nav>
+            <div class="conexoes"><!--Menu de Login-->
+                <button class="login_btn" id="loginBtn"><a href="login.html">ENTRAR</a></button>
+                <button class="cadastro_btn" id="cadastroBtn"><a href="cadastro.html">CRIAR CONTA</a></button>
+                <div id="userInfo" class="user-info" style="display: none;">
+                    <img src="#" alt="Foto de Perfil" id="userPhoto" class="foto-de-perfil" style="width: 40px; height: 40px; border-radius: 50%;">
+                    <span id="username" style="color: white;"></span>
+                    <button id="logoutBtn"><i class="fa-solid fa-right-from-bracket"></i> Fazer Logout</button>
                 </div>
             </div>
         </div>
-        <div id="featured">
-            <nav class="side-bar"> <!--Menu Lateral do Site-->
-                <ul id="side-items">
-                    <li class="side-bar-item"><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
-                    <li class="side-bar-item"><a href="campeonatos.html"><i class="fa-solid fa-trophy"></i>Campeonatos</a></li>
-                    <li class="side-bar-item  ativo"><a href="encontre-time.html"><i class="fa-solid fa-user-group"></i>Encontre um Time</a></li>
-                    <li class="side-bar-item"><a href="pick-ban.html"><i class="fa-solid fa-gamepad"></i>Picks e Bans</a></li>
-                    <li class="side-bar-item"><a href="duvidas.html"><i class="fa-solid fa-magnifying-glass"></i>Perguntas Frequentes</a></li>
-                    <li class="side-bar-item"><a href="assinaturas.html"><i class="fa-solid fa-credit-card"></i>Assinaturas</a></li>
-        
-                </ul>
-                <div id="rodape">
-                    <footer>Desenvolvido por</footer>
+    </div>
+    <div id="featured">
+        <nav class="side-bar"> <!--Menu Lateral do Site-->
+            <ul id="side-items">
+                <li class="side-bar-item"><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li class="side-bar-item"><a href="campeonatos.html"><i class="fa-solid fa-trophy"></i>Campeonatos</a></li>
+                <li class="side-bar-item  ativo"><a href="encontre-time.html"><i class="fa-solid fa-user-group"></i>Encontre um Time</a></li>
+                <li class="side-bar-item"><a href="pick-ban.html"><i class="fa-solid fa-gamepad"></i>Picks e Bans</a></li>
+                <li class="side-bar-item"><a href="duvidas.html"><i class="fa-solid fa-magnifying-glass"></i>Perguntas Frequentes</a></li>
+                <li class="side-bar-item"><a href="assinaturas.html"><i class="fa-solid fa-credit-card"></i>Assinaturas</a></li>
+    
+            </ul>
+            <div id="rodape">
+                <footer>Desenvolvido por</footer>
+            </div>
+        </nav>
+        <div class="main-content" id="main-jogo">
+            <h1>Encontre um Time</h1>
+            <div class="encontre-time-main">
+                <div class="botao-encontre-times">
+                    <button class="encontre-time-btn" data-criterio="desenvolvedores" onclick="scrollToSection(this)" >Desenvolvedores</button>
+                    <button class="encontre-time-btn" data-criterio="valorant" onclick="scrollToSection(this)" >Valorant</button>
+                    <button class="encontre-time-btn" data-criterio="lol" onclick="scrollToSection(this)">League of Legends</button>
+                    <button class="encontre-time-btn" data-criterio="r6" onclick="scrollToSection(this)">Rainbow Six</button>
+                    <button class="encontre-time-btn" data-criterio="cs" onclick="scrollToSection(this)">Counter-Strike</button>
                 </div>
-            </nav>
-            <div class="main-content" id="main-jogo">
-                <h1>Encontre um Time</h1>
-                <div class="encontre-time-main">
-                    <div class="botao-encontre-times">
-                        <button class="encontre-time-btn" data-criterio="desenvolvedores" onclick="scrollToSection(this)" >Desenvolvedores</button>
-                        <button class="encontre-time-btn" data-criterio="valorant" onclick="scrollToSection(this)" >Valorant</button>
-                        <button class="encontre-time-btn" data-criterio="lol" onclick="scrollToSection(this)">League of Legends</button>
-                        <button class="encontre-time-btn" data-criterio="r6" onclick="scrollToSection(this)">Rainbow Six</button>
-                        <button class="encontre-time-btn" data-criterio="cs" onclick="scrollToSection(this)">Counter-Strike</button>
+                <div class="encontre-content">
+                    <div id="desenvolvedores">
+                        <div class="encontre-card">
+                            <h2>Time de Desenvolvedores ProMatch.gg</h2>
+                            <div>
+                                <div class="logo-time">
+                                    <img src="img/logo.png" alt="logo do time">
+                                </div>
+                                <div class="nick-jogador">
+                                    <ul>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>Eduardo Jarzinski</span></li>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>Eric Santana</span></li>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>Gabriel Dias Puccioni</span></li>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>Gustavo de Sousa Barbosa</span></li>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>João Victor Pennacchi Meirelles</span></li>
+                                    </ul>
+                                </div>
+                                <div class="foto-bg">
+                                    <img class="foto-jogo" src="img/anhanguera.png" alt="foto valorant">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="encontre-content">
-                        <div id="desenvolvedores">
-                            <div class="encontre-card">
-                                <h2>Time de Desenvolvedores ProMatch.gg</h2>
-                                <div>
-                                    <div class="logo-time">
-                                        <img src="img/logo.png" alt="logo do time">
-                                    </div>
-                                    <div class="nick-jogador">
-                                        <ul>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>Eduardo Jarzinski</span></li>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>Eric Santana</span></li>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>Gabriel Dias Puccioni</span></li>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>Gustavo de Sousa Barbosa</span></li>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>João Victor Pennacchi Meirelles</span></li>
-                                        </ul>
-                                    </div>
-                                    <div class="foto-bg">
-                                        <img class="foto-jogo" src="img/anhanguera.png" alt="foto valorant">
-                                    </div>
+                    <div id="valorant">
+                        <div class="encontre-card card-valorant">
+                            <h2>Time Alfa</h2>
+                            <div>
+                                <div class="logo-time">
+                                    <img src="img/time-alfa.webp" alt="logo do time">
+                                </div>
+                                <div class="nick-jogador">
+                                    <ul>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                    </ul>
+                                </div>
+                                <div class="foto-bg">
+                                    <img class="foto-jogo" src="img/valorant.png" alt="foto valorant">
                                 </div>
                             </div>
                         </div>
-                        <div id="valorant">
-                            <div class="encontre-card card-valorant">
-                                <h2>Time Alfa</h2>
-                                <div>
-                                    <div class="logo-time">
-                                        <img src="img/time-alfa.webp" alt="logo do time">
-                                    </div>
-                                    <div class="nick-jogador">
-                                        <ul>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                        </ul>
-                                    </div>
-                                    <div class="foto-bg">
-                                        <img class="foto-jogo" src="img/valorant.png" alt="foto valorant">
-                                    </div>
+                        <div class="encontre-card card-valorant">
+                            <h2>Time Bravo</h2>
+                            <div>
+                                <div class="logo-time">
+                                    <img src="img/time-bravo.webp" alt="logo do time">
                                 </div>
-                            </div>
-                            <div class="encontre-card card-valorant">
-                                <h2>Time Bravo</h2>
-                                <div>
-                                    <div class="logo-time">
-                                        <img src="img/time-bravo.webp" alt="logo do time">
-                                    </div>
-                                    <div class="nick-jogador">
-                                        <ul>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                        </ul>
-                                    </div>
-                                    <div class="foto-bg">
-                                        <img class="foto-jogo" src="img/valorant.png" alt="foto valorant">
-                                    </div>
+                                <div class="nick-jogador">
+                                    <ul>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                    </ul>
                                 </div>
-                            </div>
-                            <div class="encontre-card card-valorant">
-                                <h2>Time Charlie</h2>
-                                <div>
-                                    <div class="logo-time">
-                                        <img src="img/time-charlie.webp" alt="logo do time">
-                                    </div>
-                                    <div class="nick-jogador">
-                                        <ul>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                        </ul>
-                                    </div>
-                                    <div class="foto-bg">
-                                        <img class="foto-jogo" src="img/valorant.png" alt="foto valorant">
-                                    </div>
+                                <div class="foto-bg">
+                                    <img class="foto-jogo" src="img/valorant.png" alt="foto valorant">
                                 </div>
                             </div>
                         </div>
-                        <div id="lol">
-                            <div class="encontre-card card-lol">
-                                <h2>Nome do Time</h2>
-                                <div>
-                                    <div class="logo-time">
-                                        <img src="img/logo.png" alt="logo do time">
-                                    </div>
-                                    <div class="nick-jogador">
-                                        <ul>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                        </ul>
-                                    </div>
-                                    <div class="foto-bg">
-                                        <img class="foto-jogo" src="img/lol.webp" alt="foto valorant">
-                                    </div>
+                        <div class="encontre-card card-valorant">
+                            <h2>Time Charlie</h2>
+                            <div>
+                                <div class="logo-time">
+                                    <img src="img/time-charlie.webp" alt="logo do time">
                                 </div>
-                            </div>
-                            <div class="encontre-card card-lol">
-                                <h2>Nome do Time</h2>
-                                <div>
-                                    <div class="logo-time">
-                                        <img src="img/logo.png" alt="logo do time">
-                                    </div>
-                                    <div class="nick-jogador">
-                                        <ul>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                        </ul>
-                                    </div>
-                                    <div class="foto-bg">
-                                        <img class="foto-jogo" src="img/lol.webp" alt="foto valorant">
-                                    </div>
+                                <div class="nick-jogador">
+                                    <ul>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                    </ul>
                                 </div>
-                            </div>
-                            <div class="encontre-card card-lol">
-                                <h2>Nome do Time</h2>
-                                <div>
-                                    <div class="logo-time">
-                                        <img src="img/logo.png" alt="logo do time">
-                                    </div>
-                                    <div class="nick-jogador">
-                                        <ul>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                        </ul>
-                                    </div>
-                                    <div class="foto-bg">
-                                        <img class="foto-jogo" src="img/lol.webp" alt="foto valorant">
-                                    </div>
+                                <div class="foto-bg">
+                                    <img class="foto-jogo" src="img/valorant.png" alt="foto valorant">
                                 </div>
                             </div>
                         </div>
-                        <div id="r6">
-                            <div class="encontre-card card-r6">
-                                <h2>Nome do Time</h2>
-                                <div>
-                                    <div class="logo-time">
-                                        <img src="img/logo.png" alt="logo do time">
-                                    </div>
-                                    <div class="nick-jogador">
-                                        <ul>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                        </ul>
-                                    </div>
-                                    <div class="foto-bg">
-                                        <img class="foto-jogo" src="img/r6.webp" alt="foto valorant">
-                                    </div>
+                    </div>
+                    <div id="lol">
+                        <div class="encontre-card card-lol">
+                            <h2>Nome do Time</h2>
+                            <div>
+                                <div class="logo-time">
+                                    <img src="img/logo.png" alt="logo do time">
                                 </div>
-                            </div>
-                            <div class="encontre-card card-r6">
-                                <h2>Nome do Time</h2>
-                                <div>
-                                    <div class="logo-time">
-                                        <img src="img/logo.png" alt="logo do time">
-                                    </div>
-                                    <div class="nick-jogador">
-                                        <ul>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                        </ul>
-                                    </div>
-                                    <div class="foto-bg">
-                                        <img class="foto-jogo" src="img/r6.webp" alt="foto valorant">
-                                    </div>
+                                <div class="nick-jogador">
+                                    <ul>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                    </ul>
                                 </div>
-                            </div>
-                            <div class="encontre-card card-r6">
-                                <h2>Nome do Time</h2>
-                                <div>
-                                    <div class="logo-time">
-                                        <img src="img/logo.png" alt="logo do time">
-                                    </div>
-                                    <div class="nick-jogador">
-                                        <ul>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                        </ul>
-                                    </div>
-                                    <div class="foto-bg">
-                                        <img class="foto-jogo" src="img/r6.webp" alt="foto valorant">
-                                    </div>
+                                <div class="foto-bg">
+                                    <img class="foto-jogo" src="img/lol.webp" alt="foto valorant">
                                 </div>
                             </div>
                         </div>
-                        <div id="cs">
-                            <div class="encontre-card card-cs">
-                                <h2>Nome do Time</h2>
-                                <div>
-                                    <div class="logo-time">
-                                        <img src="img/logo.png" alt="logo do time">
-                                    </div>
-                                    <div class="nick-jogador">
-                                        <ul>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                        </ul>
-                                    </div>
-                                    <div class="foto-bg">
-                                        <img class="foto-jogo" src="img/cs.jpg" alt="foto cs">
-                                    </div>
+                        <div class="encontre-card card-lol">
+                            <h2>Nome do Time</h2>
+                            <div>
+                                <div class="logo-time">
+                                    <img src="img/logo.png" alt="logo do time">
+                                </div>
+                                <div class="nick-jogador">
+                                    <ul>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                    </ul>
+                                </div>
+                                <div class="foto-bg">
+                                    <img class="foto-jogo" src="img/lol.webp" alt="foto valorant">
                                 </div>
                             </div>
-                            <div class="encontre-card card-cs">
-                                <h2>Nome do Time</h2>
-                                <div>
-                                    <div class="logo-time">
-                                        <img src="img/logo.png" alt="logo do time">
-                                    </div>
-                                    <div class="nick-jogador">
-                                        <ul>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                        </ul>
-                                    </div>
-                                    <div class="foto-bg">
-                                        <img class="foto-jogo" src="img/cs.jpg" alt="foto cs">
-                                    </div>
+                        </div>
+                        <div class="encontre-card card-lol">
+                            <h2>Nome do Time</h2>
+                            <div>
+                                <div class="logo-time">
+                                    <img src="img/logo.png" alt="logo do time">
+                                </div>
+                                <div class="nick-jogador">
+                                    <ul>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                    </ul>
+                                </div>
+                                <div class="foto-bg">
+                                    <img class="foto-jogo" src="img/lol.webp" alt="foto valorant">
                                 </div>
                             </div>
-                            <div class="encontre-card card-cs">
-                                <h2>Nome do Time</h2>
-                                <div>
-                                    <div class="logo-time">
-                                        <img src="img/logo.png" alt="logo do time">
-                                    </div>
-                                    <div class="nick-jogador">
-                                        <ul>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                            <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
-                                        </ul>
-                                    </div>
-                                    <div class="foto-bg">
-                                        <img class="foto-jogo" src="img/cs.jpg" alt="foto cs">
-                                    </div>
+                        </div>
+                    </div>
+                    <div id="r6">
+                        <div class="encontre-card card-r6">
+                            <h2>Nome do Time</h2>
+                            <div>
+                                <div class="logo-time">
+                                    <img src="img/logo.png" alt="logo do time">
+                                </div>
+                                <div class="nick-jogador">
+                                    <ul>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                    </ul>
+                                </div>
+                                <div class="foto-bg">
+                                    <img class="foto-jogo" src="img/r6.webp" alt="foto valorant">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="encontre-card card-r6">
+                            <h2>Nome do Time</h2>
+                            <div>
+                                <div class="logo-time">
+                                    <img src="img/logo.png" alt="logo do time">
+                                </div>
+                                <div class="nick-jogador">
+                                    <ul>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                    </ul>
+                                </div>
+                                <div class="foto-bg">
+                                    <img class="foto-jogo" src="img/r6.webp" alt="foto valorant">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="encontre-card card-r6">
+                            <h2>Nome do Time</h2>
+                            <div>
+                                <div class="logo-time">
+                                    <img src="img/logo.png" alt="logo do time">
+                                </div>
+                                <div class="nick-jogador">
+                                    <ul>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                    </ul>
+                                </div>
+                                <div class="foto-bg">
+                                    <img class="foto-jogo" src="img/r6.webp" alt="foto valorant">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="cs">
+                        <div class="encontre-card card-cs">
+                            <h2>Nome do Time</h2>
+                            <div>
+                                <div class="logo-time">
+                                    <img src="img/logo.png" alt="logo do time">
+                                </div>
+                                <div class="nick-jogador">
+                                    <ul>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                    </ul>
+                                </div>
+                                <div class="foto-bg">
+                                    <img class="foto-jogo" src="img/cs.jpg" alt="foto cs">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="encontre-card card-cs">
+                            <h2>Nome do Time</h2>
+                            <div>
+                                <div class="logo-time">
+                                    <img src="img/logo.png" alt="logo do time">
+                                </div>
+                                <div class="nick-jogador">
+                                    <ul>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                    </ul>
+                                </div>
+                                <div class="foto-bg">
+                                    <img class="foto-jogo" src="img/cs.jpg" alt="foto cs">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="encontre-card card-cs">
+                            <h2>Nome do Time</h2>
+                            <div>
+                                <div class="logo-time">
+                                    <img src="img/logo.png" alt="logo do time">
+                                </div>
+                                <div class="nick-jogador">
+                                    <ul>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                        <li class="jogador"><i class="fa-solid fa-circle-user"></i><span>nome de jogador</span></li>
+                                    </ul>
+                                </div>
+                                <div class="foto-bg">
+                                    <img class="foto-jogo" src="img/cs.jpg" alt="foto cs">
                                 </div>
                             </div>
                         </div>

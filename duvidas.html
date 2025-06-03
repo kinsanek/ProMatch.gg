@@ -12,86 +12,84 @@
     <script defer src="js/faq.js"></script> <!--Link do Script-->
 </head>
 <body>
-    <div id="app">
-        <div class="topo-site"> <!--Cabeçalho-->
-            <a href="index.html"><img class="logo" src="img/logo.png" alt="Logo do Site"></a>
-            <div>
-                <nav class="jogo"><!--Menu de opção de jogo da preferência do usuário-->
-                    <a class="selecao-jogo" href="valorant.html">Valorant</a>
-                    <a class="selecao-jogo" href="lol.html">League of Legends</a>
-                    <a class="selecao-jogo" href="r6.html">Rainbow Six</a>
-                    <a class="selecao-jogo" href="cs.html">Counter-Strike</a>
-                </nav>
-                <div class="conexoes"><!--Menu de Login-->
-                    <button class="login_btn" id="loginBtn"><a href="login.html">ENTRAR</a></button>
-                    <button class="cadastro_btn" id="cadastroBtn"><a href="cadastro.html">CRIAR CONTA</a></button>
-                    <div id="userInfo" class="user-info" style="display: none;">
-                        <img src="#" alt="Foto de Perfil" id="userPhoto" class="foto-de-perfil" style="width: 40px; height: 40px; border-radius: 50%;">
-                        <span id="username" style="color: white;"></span>
-                        <button id="logoutBtn"><i class="fa-solid fa-right-from-bracket"></i> Fazer Logout</button>
-                    </div>
+    <div class="topo-site"> <!--Cabeçalho-->
+        <a href="index.html"><img class="logo" src="img/logo.png" alt="Logo do Site"></a>
+        <div>
+            <nav class="jogo"><!--Menu de opção de jogo da preferência do usuário-->
+                <a class="selecao-jogo" href="valorant.html">Valorant</a>
+                <a class="selecao-jogo" href="lol.html">League of Legends</a>
+                <a class="selecao-jogo" href="r6.html">Rainbow Six</a>
+                <a class="selecao-jogo" href="cs.html">Counter-Strike</a>
+            </nav>
+            <div class="conexoes"><!--Menu de Login-->
+                <button class="login_btn" id="loginBtn"><a href="login.html">ENTRAR</a></button>
+                <button class="cadastro_btn" id="cadastroBtn"><a href="cadastro.html">CRIAR CONTA</a></button>
+                <div id="userInfo" class="user-info" style="display: none;">
+                    <img src="#" alt="Foto de Perfil" id="userPhoto" class="foto-de-perfil" style="width: 40px; height: 40px; border-radius: 50%;">
+                    <span id="username" style="color: white;"></span>
+                    <button id="logoutBtn"><i class="fa-solid fa-right-from-bracket"></i> Fazer Logout</button>
                 </div>
             </div>
         </div>
-        <div id="featured">
-            <nav class="side-bar"> <!--Menu Lateral do Site-->
-                <ul id="side-items">
-                    <li class="side-bar-item"><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
-                    <li class="side-bar-item"><a href="campeonatos.html"><i class="fa-solid fa-trophy"></i>Campeonatos</a></li>
-                    <li class="side-bar-item"><a href="encontre-time.html"><i class="fa-solid fa-user-group"></i>Encontre um Time</a></li>
-                    <li class="side-bar-item"><a href="pick-ban.html"><i class="fa-solid fa-gamepad"></i>Picks e Bans</a></li>
-                    <li class="side-bar-item ativo"><a href="duvidas.html"><i class="fa-solid fa-magnifying-glass"></i>Perguntas Frequentes</a></li>
-                    <li class="side-bar-item"><a href="assinaturas.html"><i class="fa-solid fa-credit-card"></i>Assinaturas</a></li>
-        
-                </ul>
-                <div id="rodape">
-                    <footer>Desenvolvido por</footer>
-                </div>
-            </nav>
-            <div class="main-content" id="main-jogo">
-                <h2>Dúvidas Frequentes</h2>
-                <div class="faq">
-                    <div class="faq-item">
-                        <button class="faq-pergunta"> O que é o ProMatch.gg</button>
-                        <div class="faq-resposta">
-                            <p>ProMatch.gg é uma plataforma dedicada ao cenário competitivo de e-sports, conectando jogadores e organizando torneios para games como Valorant, LoL, R6 e CS2.</p>
-                        </div>
-                    </div>
-                                <div class="faq-item">
-                        <button class="faq-pergunta"> Como posso encontrar um time para jogar?</button>
-                        <div class="faq-resposta">
-                            <p>Basta acessar a seção "Encontre um Time", preencher seu perfil com informações como elo, função e disponibilidade, e você poderá visualizar e entrar em contato com equipes que buscam jogadores com o seu perfil.</p>
-                        </div>
-                    </div>
-                                <div class="faq-item">
-                        <button class="faq-pergunta"> Preciso pagar para usar o site?</button>
-                        <div class="faq-resposta">
-                            <p>A maioria das funcionalidades básicas do ProMatch.gg é gratuita. No entanto, algumas ferramentas avançadas e recursos exclusivos podem estar disponíveis apenas para usuários com assinatura ativa.</p>
-                        </div>
-                    </div>
-                                <div class="faq-item">
-                        <button class="faq-pergunta"> Quais jogos são suportados pela plataforma?</button>
-                        <div class="faq-resposta">
-                            <p>Atualmente, ProMatch.gg oferece suporte para os principais títulos competitivos: Valorant, League of Legends, Rainbow Six e Counter-Strike. Novos jogos podem ser adicionados no futuro conforme a demanda da comunidade.</p>
-                        </div>
+    </div>
+    <div id="featured">
+        <nav class="side-bar"> <!--Menu Lateral do Site-->
+            <ul id="side-items">
+                <li class="side-bar-item"><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li class="side-bar-item"><a href="campeonatos.html"><i class="fa-solid fa-trophy"></i>Campeonatos</a></li>
+                <li class="side-bar-item"><a href="encontre-time.html"><i class="fa-solid fa-user-group"></i>Encontre um Time</a></li>
+                <li class="side-bar-item"><a href="pick-ban.html"><i class="fa-solid fa-gamepad"></i>Picks e Bans</a></li>
+                <li class="side-bar-item ativo"><a href="duvidas.html"><i class="fa-solid fa-magnifying-glass"></i>Perguntas Frequentes</a></li>
+                <li class="side-bar-item"><a href="assinaturas.html"><i class="fa-solid fa-credit-card"></i>Assinaturas</a></li>
+    
+            </ul>
+            <div id="rodape">
+                <footer>Desenvolvido por</footer>
+            </div>
+        </nav>
+        <div class="main-content" id="main-jogo">
+            <h2>Dúvidas Frequentes</h2>
+            <div class="faq">
+                <div class="faq-item">
+                    <button class="faq-pergunta"> O que é o ProMatch.gg</button>
+                    <div class="faq-resposta">
+                        <p>ProMatch.gg é uma plataforma dedicada ao cenário competitivo de e-sports, conectando jogadores e organizando torneios para games como Valorant, LoL, R6 e CS2.</p>
                     </div>
                 </div>
-                <div class="ajuda-container" id="ajudaContainer">
-                    <button class="ajuda-botao" id="abrirAjuda">
-                        <i class="fa-solid fa-circle-question"></i> Precisa de ajuda?
-                    </button>
-                    <div class="ajuda-formulario" id="formAjuda">
-                        <div class="ajuda-header">
-                            <h3>Envie sua dúvida!</h3>
-                            <button id="fecharAjuda" class="fechar-btm">&times;</button>
-                        </div>
-                        <form>
-                            <input type="text" placeholder="Seu nome"required>
-                             <input type="email" placeholder="Seu email"required>
-                            <textarea placeholder="Digite sua dúvida..."required></textarea>
-                            <button type="submit">Enviar</button>
-                        </form>
+                            <div class="faq-item">
+                    <button class="faq-pergunta"> Como posso encontrar um time para jogar?</button>
+                    <div class="faq-resposta">
+                        <p>Basta acessar a seção "Encontre um Time", preencher seu perfil com informações como elo, função e disponibilidade, e você poderá visualizar e entrar em contato com equipes que buscam jogadores com o seu perfil.</p>
                     </div>
+                </div>
+                            <div class="faq-item">
+                    <button class="faq-pergunta"> Preciso pagar para usar o site?</button>
+                    <div class="faq-resposta">
+                        <p>A maioria das funcionalidades básicas do ProMatch.gg é gratuita. No entanto, algumas ferramentas avançadas e recursos exclusivos podem estar disponíveis apenas para usuários com assinatura ativa.</p>
+                    </div>
+                </div>
+                            <div class="faq-item">
+                    <button class="faq-pergunta"> Quais jogos são suportados pela plataforma?</button>
+                    <div class="faq-resposta">
+                        <p>Atualmente, ProMatch.gg oferece suporte para os principais títulos competitivos: Valorant, League of Legends, Rainbow Six e Counter-Strike. Novos jogos podem ser adicionados no futuro conforme a demanda da comunidade.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ajuda-container" id="ajudaContainer">
+                <button class="ajuda-botao" id="abrirAjuda">
+                    <i class="fa-solid fa-circle-question"></i> Precisa de ajuda?
+                </button>
+                <div class="ajuda-formulario" id="formAjuda">
+                    <div class="ajuda-header">
+                        <h3>Envie sua dúvida!</h3>
+                        <button id="fecharAjuda" class="fechar-btm">&times;</button>
+                    </div>
+                    <form>
+                        <input type="text" placeholder="Seu nome"required>
+                            <input type="email" placeholder="Seu email"required>
+                        <textarea placeholder="Digite sua dúvida..."required></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
                 </div>
             </div>
         </div>

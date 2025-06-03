@@ -13,679 +13,677 @@
     <script defer src="js/pick-ban.js"></script> <!--Link do Script-->
 </head>
 <body>
-    <div id="app">
-        <div class="topo-site"> <!--Cabeçalho-->
-            <a href="index.html"><img class="logo" src="img/logo.png" alt="Logo do Site"></a>
-            <div>
-                <nav class="jogo"><!--Menu de opção de jogo da preferência do usuário-->
-                    <a class="selecao-jogo" href="valorant.html">Valorant</a>
-                    <a class="selecao-jogo" href="lol.html">League of Legends</a>
-                    <a class="selecao-jogo" href="r6.html">Rainbow Six</a>
-                    <a class="selecao-jogo" href="cs.html">Counter-Strike</a>
-                </nav>
-                <div class="conexoes"><!--Menu de Login-->
-                    <button class="login_btn" id="loginBtn"><a href="login.html">ENTRAR</a></button>
-                    <button class="cadastro_btn" id="cadastroBtn"><a href="cadastro.html">CRIAR CONTA</a></button>
-                    <div id="userInfo" class="user-info" style="display: none;">
-                        <img src="#" alt="Foto de Perfil" id="userPhoto" class="foto-de-perfil" style="width: 40px; height: 40px; border-radius: 50%;">
-                        <span id="username" style="color: white;"></span>
-                        <button id="logoutBtn"><i class="fa-solid fa-right-from-bracket"></i> Fazer Logout</button>
-                    </div>
+    <div class="topo-site"> <!--Cabeçalho-->
+        <a href="index.html"><img class="logo" src="img/logo.png" alt="Logo do Site"></a>
+        <div>
+            <nav class="jogo"><!--Menu de opção de jogo da preferência do usuário-->
+                <a class="selecao-jogo" href="valorant.html">Valorant</a>
+                <a class="selecao-jogo" href="lol.html">League of Legends</a>
+                <a class="selecao-jogo" href="r6.html">Rainbow Six</a>
+                <a class="selecao-jogo" href="cs.html">Counter-Strike</a>
+            </nav>
+            <div class="conexoes"><!--Menu de Login-->
+                <button class="login_btn" id="loginBtn"><a href="login.html">ENTRAR</a></button>
+                <button class="cadastro_btn" id="cadastroBtn"><a href="cadastro.html">CRIAR CONTA</a></button>
+                <div id="userInfo" class="user-info" style="display: none;">
+                    <img src="#" alt="Foto de Perfil" id="userPhoto" class="foto-de-perfil" style="width: 40px; height: 40px; border-radius: 50%;">
+                    <span id="username" style="color: white;"></span>
+                    <button id="logoutBtn"><i class="fa-solid fa-right-from-bracket"></i> Fazer Logout</button>
                 </div>
             </div>
         </div>
-        <div id="featured">
-            <nav class="side-bar"> <!--Menu Lateral do Site-->
-                <ul id="side-items">
-                    <li class="side-bar-item"><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
-                    <li class="side-bar-item"><a href="campeonatos.html"><i class="fa-solid fa-trophy"></i>Campeonatos</a></li>
-                    <li class="side-bar-item"><a href="encontre-time.html"><i class="fa-solid fa-user-group"></i>Encontre um Time</a></li>
-                    <li class="side-bar-item ativo"><a href="pick-ban.html"><i class="fa-solid fa-gamepad"></i>Picks e Bans</a></li>
-                    <li class="side-bar-item"><a href="duvidas.html"><i class="fa-solid fa-magnifying-glass"></i>Perguntas Frequentes</a></li>
-                    <li class="side-bar-item"><a href="assinaturas.html"><i class="fa-solid fa-credit-card"></i>Assinaturas</a></li>
-        
-                </ul>
-                <div id="rodape">
-                    <footer>Desenvolvido por</footer>
-                </div>
-            </nav>
-            <div id="main-jogo" class="main-content">
-                <img id="valorant" class="logo-jogo" src="img/valorant-logo.png">
-                <h1 id="turnText">É a vez da equipe X Banir o Mapa</h1>
-                <div class="mapas">
-                    <div class="abyss card">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="mapname">
-                            <h2>Abyss</h2>
-                        </div>
-                    </div>
-                    <div class="bind card">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="mapname">
-                            <h2>Bind</h2>
-                        </div>
-                    </div>
-                    <div class="fracture card">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="mapname">
-                            <h2>Fracture</h2>
-                        </div>
-                    </div>
-                    <div class="lotus card">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="mapname">
-                            <h2>Lotus</h2>
-                        </div>
-                    </div>
-                    <div class="haven card">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="mapname">
-                            <h2>Haven</h2>
-                        </div>
-                    </div>
-                    <div class="pearl card">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="mapname">
-                            <h2>Pearl</h2>
-                        </div>
-                    </div>
-                    <div class="split card">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="mapname">
-                            <h2>Split</h2>
-                        </div>
-                    </div>
-                </div>
-                <hr class="divisao">
-                <img id="cs" src="img/cs2-logo.png" class="logo-jogo csimg">
-                <h1 id="turnText-cs">É a vez da equipe X Banir o Mapa</h1>
-                <div class="mapas-cs">
-                    <div class="mirage card-cs">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="mapname-cs">
-                            <h2>Mirage</h2>
-                        </div>
-                    </div>
-                    <div class="dust2 card-cs">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="mapname-cs">
-                            <h2>Dust 2</h2>
-                        </div>
-                    </div>
-                    <div class="inferno card-cs">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="mapname-cs">
-                            <h2>Inferno</h2>
-                        </div>
-                    </div>
-                    <div class="anubis card-cs">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="mapname-cs">
-                            <h2>Anubis</h2>
-                        </div>
-                    </div>
-                    <div class="ancient card-cs">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="mapname-cs">
-                            <h2>Ancient</h2>
-                        </div>
-                    </div>
-                    <div class="nuke card-cs">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="mapname-cs">
-                            <h2>Nuke</h2>
-                        </div>
-                    </div>
-                    <div class="train card-cs">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="mapname-cs">
-                            <h2>Train</h2>
-                        </div>
-                    </div>
-                </div>
-                <hr class="divisao">
-                <img id="r6" src="img/r6-logo.png" class="logo-jogo r6img">
-                <h1 id="turnText-r6">É a vez da equipe X Banir o Mapa</h1>
-                <div class="mapas-r6">
-                    <div class="arranha-ceu card-r6">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="mapname-r6">
-                            <h2>Arranha-Céu</h2>
-                        </div>
-                    </div>
-                    <div class="banco card-r6">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="mapname-r6">
-                            <h2>Banco</h2>
-                        </div>
-                    </div>
-                    <div class="cafe card-r6">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="mapname-r6">
-                            <h2>Café Dostoievski</h2>
-                        </div>
-                    </div>
-                    <div class="chale card-r6">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="mapname-r6">
-                            <h2>Chalé</h2>
-                        </div>
-                    </div>
-                    <div class="clube card-r6">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="mapname-r6">
-                            <h2>Clube</h2>
-                        </div>
-                    </div>
-                    <div class="consulado card-r6">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="mapname-r6">
-                            <h2>Consulado</h2>
-                        </div>
-                    </div>
-                    <div class="fronteira card-r6">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="mapname-r6">
-                            <h2>Fronteira</h2>
-                        </div>
-                    </div>
-                </div>
-                <hr class="divisao">
-                <img id="lol" src="img/lolzinho-white.png" class="logo-jogo lol-img">
-                <h1 id="turnTextLol">É a vez da equipe X Banir o Campeão</h1>
-                <div class="campeoes">
-                    <div class="nome aatrox">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="nome-campeao">
-                            <p>Aatrox</p>
-                        </div>
-                    </div>
-                    <div class="nome ahri">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="nome-campeao">
-                            <p>Ahri</p>
-                        </div>
-                    </div>
-                    <div class="nome akshan">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="nome-campeao">
-                            <p>Akshan</p>
-                        </div>
-                    </div>
-                    <div class="nome aphelios">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="nome-campeao">
-                            <p>Aphelios</p>
-                        </div>
-                    </div>
-                    <div class="nome amumu">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="nome-campeao">
-                            <p>Amumu</p>
-                        </div>
-                    </div>
-                    <div class="nome belveth">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="nome-campeao">
-                            <p>Bel'veth</p>
-                        </div>
-                    </div>
-                    <div class="nome brand">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="nome-campeao">
-                            <p>Brand</p>
-                        </div>
-                    </div>
-                    <div class="nome caitlyn">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="nome-campeao">
-                            <p>Caitlyn</p>
-                        </div>
-                    </div>
-                    <div class="nome chogath">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="nome-campeao">
-                            <p>Cho'gath</p>
-                        </div>
-                    </div>
-                    <div class="nome darius">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="nome-campeao">
-                            <p>Darius</p>
-                        </div>
-                    </div>
-                    <div class="nome draven">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="nome-campeao">
-                            <p>Draven</p>
-                        </div>
-                    </div>
-                    <div class="nome ekko">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="nome-campeao">
-                            <p>Ekko</p>
-                        </div>
-                    </div>
-                    <div class="nome ezreal">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="nome-campeao">
-                            <p>Ezreal</p>
-                        </div>
-                    </div>
-                    <div class="nome fiddlesticks">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="nome-campeao">
-                            <p>Fiddlesticks</p>
-                        </div>
-                    </div>
-                    <div class="nome garen">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="nome-campeao">
-                            <p>Garen</p>
-                        </div>
-                    </div>
-                    <div class="nome gragas">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="nome-campeao">
-                            <p>Gragas</p>
-                        </div>
-                    </div>
-                    <div class="nome irelia">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="nome-campeao">
-                            <p>Irelia</p>
-                        </div>
-                    </div>
-                    <div class="nome jax">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="nome-campeao">
-                            <p>Jax</p>
-                        </div>
-                    </div>
-                    <div class="nome jayce">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="nome-campeao">
-                            <p>Jayce</p>
-                        </div>
-                    </div>
-                    <div class="nome jinx">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="nome-campeao">
-                            <p>Jinx</p>
-                        </div>
-                    </div>
-                    <div class="nome karthus">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="nome-campeao">
-                            <p>Karthus</p>
-                        </div>
-                    </div>
-                    <div class="nome katarina">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="nome-campeao">
-                            <p>Katarina</p>
-                        </div>
-                    </div>
-                    <div class="nome kayle">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="nome-campeao">
-                            <p>Kayle</p>
-                        </div>
-                    </div>
-                    <div class="nome leesin">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="nome-campeao">
-                            <p>Lee Sin</p>
-                        </div>
-                    </div>
-                    <div class="nome lulu">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="nome-campeao">
-                            <p>Lulu</p>
-                        </div>
-                    </div>
-                    <div class="nome lux">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="nome-campeao">
-                            <p>Lux</p>
-                        </div>
-                    </div>
-                    <div class="nome malphite">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="nome-campeao">
-                            <p>Malphite</p>
-                        </div>
-                    </div>
-                    <div class="nome masteryi">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="nome-campeao">
-                            <p>Master Yi</p>
-                        </div>
-                    </div>
-                    <div class="nome mordekaiser">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="nome-campeao">
-                            <p>Mordekaiser</p>
-                        </div>
-                    </div>
-                    <div class="nome morgana">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="nome-campeao">
-                            <p>Morgana</p>
-                        </div>
-                    </div>
-                    <div class="nome neeko">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="nome-campeao">
-                            <p>Neeko</p>
-                        </div>
-                    </div>
-                    <div class="nome nunu">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="nome-campeao">
-                            <p>Nunu</p>
-                        </div>
-                    </div>
-                    <div class="nome olaf">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="nome-campeao">
-                            <p>Olaf</p>
-                        </div>
-                    </div>
-                    <div class="nome sylas">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="nome-campeao">
-                            <p>Sylas</p>
-                        </div>
-                    </div>
-                    <div class="nome viego">
-                        <div class="accept">
-                            <h2>Banir</h2>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="nome-campeao">
-                            <p>Viego</p>
-                        </div>
-                    </div>
-            </div>
     </div>
+    <div id="featured">
+        <nav class="side-bar"> <!--Menu Lateral do Site-->
+            <ul id="side-items">
+                <li class="side-bar-item"><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li class="side-bar-item"><a href="campeonatos.html"><i class="fa-solid fa-trophy"></i>Campeonatos</a></li>
+                <li class="side-bar-item"><a href="encontre-time.html"><i class="fa-solid fa-user-group"></i>Encontre um Time</a></li>
+                <li class="side-bar-item ativo"><a href="pick-ban.html"><i class="fa-solid fa-gamepad"></i>Picks e Bans</a></li>
+                <li class="side-bar-item"><a href="duvidas.html"><i class="fa-solid fa-magnifying-glass"></i>Perguntas Frequentes</a></li>
+                <li class="side-bar-item"><a href="assinaturas.html"><i class="fa-solid fa-credit-card"></i>Assinaturas</a></li>
+    
+            </ul>
+            <div id="rodape">
+                <footer>Desenvolvido por</footer>
+            </div>
+        </nav>
+        <div id="main-jogo" class="main-content">
+            <img id="valorant" class="logo-jogo" src="img/valorant-logo.png">
+            <h1 id="turnText">É a vez da equipe X Banir o Mapa</h1>
+            <div class="mapas">
+                <div class="abyss card">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="mapname">
+                        <h2>Abyss</h2>
+                    </div>
+                </div>
+                <div class="bind card">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="mapname">
+                        <h2>Bind</h2>
+                    </div>
+                </div>
+                <div class="fracture card">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="mapname">
+                        <h2>Fracture</h2>
+                    </div>
+                </div>
+                <div class="lotus card">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="mapname">
+                        <h2>Lotus</h2>
+                    </div>
+                </div>
+                <div class="haven card">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="mapname">
+                        <h2>Haven</h2>
+                    </div>
+                </div>
+                <div class="pearl card">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="mapname">
+                        <h2>Pearl</h2>
+                    </div>
+                </div>
+                <div class="split card">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="mapname">
+                        <h2>Split</h2>
+                    </div>
+                </div>
+            </div>
+            <hr class="divisao">
+            <img id="cs" src="img/cs2-logo.png" class="logo-jogo csimg">
+            <h1 id="turnText-cs">É a vez da equipe X Banir o Mapa</h1>
+            <div class="mapas-cs">
+                <div class="mirage card-cs">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="mapname-cs">
+                        <h2>Mirage</h2>
+                    </div>
+                </div>
+                <div class="dust2 card-cs">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="mapname-cs">
+                        <h2>Dust 2</h2>
+                    </div>
+                </div>
+                <div class="inferno card-cs">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="mapname-cs">
+                        <h2>Inferno</h2>
+                    </div>
+                </div>
+                <div class="anubis card-cs">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="mapname-cs">
+                        <h2>Anubis</h2>
+                    </div>
+                </div>
+                <div class="ancient card-cs">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="mapname-cs">
+                        <h2>Ancient</h2>
+                    </div>
+                </div>
+                <div class="nuke card-cs">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="mapname-cs">
+                        <h2>Nuke</h2>
+                    </div>
+                </div>
+                <div class="train card-cs">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="mapname-cs">
+                        <h2>Train</h2>
+                    </div>
+                </div>
+            </div>
+            <hr class="divisao">
+            <img id="r6" src="img/r6-logo.png" class="logo-jogo r6img">
+            <h1 id="turnText-r6">É a vez da equipe X Banir o Mapa</h1>
+            <div class="mapas-r6">
+                <div class="arranha-ceu card-r6">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="mapname-r6">
+                        <h2>Arranha-Céu</h2>
+                    </div>
+                </div>
+                <div class="banco card-r6">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="mapname-r6">
+                        <h2>Banco</h2>
+                    </div>
+                </div>
+                <div class="cafe card-r6">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="mapname-r6">
+                        <h2>Café Dostoievski</h2>
+                    </div>
+                </div>
+                <div class="chale card-r6">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="mapname-r6">
+                        <h2>Chalé</h2>
+                    </div>
+                </div>
+                <div class="clube card-r6">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="mapname-r6">
+                        <h2>Clube</h2>
+                    </div>
+                </div>
+                <div class="consulado card-r6">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="mapname-r6">
+                        <h2>Consulado</h2>
+                    </div>
+                </div>
+                <div class="fronteira card-r6">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="mapname-r6">
+                        <h2>Fronteira</h2>
+                    </div>
+                </div>
+            </div>
+            <hr class="divisao">
+            <img id="lol" src="img/lolzinho-white.png" class="logo-jogo lol-img">
+            <h1 id="turnTextLol">É a vez da equipe X Banir o Campeão</h1>
+            <div class="campeoes">
+                <div class="nome aatrox">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="nome-campeao">
+                        <p>Aatrox</p>
+                    </div>
+                </div>
+                <div class="nome ahri">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="nome-campeao">
+                        <p>Ahri</p>
+                    </div>
+                </div>
+                <div class="nome akshan">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="nome-campeao">
+                        <p>Akshan</p>
+                    </div>
+                </div>
+                <div class="nome aphelios">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="nome-campeao">
+                        <p>Aphelios</p>
+                    </div>
+                </div>
+                <div class="nome amumu">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="nome-campeao">
+                        <p>Amumu</p>
+                    </div>
+                </div>
+                <div class="nome belveth">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="nome-campeao">
+                        <p>Bel'veth</p>
+                    </div>
+                </div>
+                <div class="nome brand">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="nome-campeao">
+                        <p>Brand</p>
+                    </div>
+                </div>
+                <div class="nome caitlyn">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="nome-campeao">
+                        <p>Caitlyn</p>
+                    </div>
+                </div>
+                <div class="nome chogath">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="nome-campeao">
+                        <p>Cho'gath</p>
+                    </div>
+                </div>
+                <div class="nome darius">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="nome-campeao">
+                        <p>Darius</p>
+                    </div>
+                </div>
+                <div class="nome draven">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="nome-campeao">
+                        <p>Draven</p>
+                    </div>
+                </div>
+                <div class="nome ekko">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="nome-campeao">
+                        <p>Ekko</p>
+                    </div>
+                </div>
+                <div class="nome ezreal">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="nome-campeao">
+                        <p>Ezreal</p>
+                    </div>
+                </div>
+                <div class="nome fiddlesticks">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="nome-campeao">
+                        <p>Fiddlesticks</p>
+                    </div>
+                </div>
+                <div class="nome garen">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="nome-campeao">
+                        <p>Garen</p>
+                    </div>
+                </div>
+                <div class="nome gragas">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="nome-campeao">
+                        <p>Gragas</p>
+                    </div>
+                </div>
+                <div class="nome irelia">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="nome-campeao">
+                        <p>Irelia</p>
+                    </div>
+                </div>
+                <div class="nome jax">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="nome-campeao">
+                        <p>Jax</p>
+                    </div>
+                </div>
+                <div class="nome jayce">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="nome-campeao">
+                        <p>Jayce</p>
+                    </div>
+                </div>
+                <div class="nome jinx">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="nome-campeao">
+                        <p>Jinx</p>
+                    </div>
+                </div>
+                <div class="nome karthus">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="nome-campeao">
+                        <p>Karthus</p>
+                    </div>
+                </div>
+                <div class="nome katarina">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="nome-campeao">
+                        <p>Katarina</p>
+                    </div>
+                </div>
+                <div class="nome kayle">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="nome-campeao">
+                        <p>Kayle</p>
+                    </div>
+                </div>
+                <div class="nome leesin">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="nome-campeao">
+                        <p>Lee Sin</p>
+                    </div>
+                </div>
+                <div class="nome lulu">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="nome-campeao">
+                        <p>Lulu</p>
+                    </div>
+                </div>
+                <div class="nome lux">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="nome-campeao">
+                        <p>Lux</p>
+                    </div>
+                </div>
+                <div class="nome malphite">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="nome-campeao">
+                        <p>Malphite</p>
+                    </div>
+                </div>
+                <div class="nome masteryi">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="nome-campeao">
+                        <p>Master Yi</p>
+                    </div>
+                </div>
+                <div class="nome mordekaiser">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="nome-campeao">
+                        <p>Mordekaiser</p>
+                    </div>
+                </div>
+                <div class="nome morgana">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="nome-campeao">
+                        <p>Morgana</p>
+                    </div>
+                </div>
+                <div class="nome neeko">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="nome-campeao">
+                        <p>Neeko</p>
+                    </div>
+                </div>
+                <div class="nome nunu">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="nome-campeao">
+                        <p>Nunu</p>
+                    </div>
+                </div>
+                <div class="nome olaf">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="nome-campeao">
+                        <p>Olaf</p>
+                    </div>
+                </div>
+                <div class="nome sylas">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="nome-campeao">
+                        <p>Sylas</p>
+                    </div>
+                </div>
+                <div class="nome viego">
+                    <div class="accept">
+                        <h2>Banir</h2>
+                    </div>
+                    <div class="check">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="nome-campeao">
+                        <p>Viego</p>
+                    </div>
+                </div>
+        </div>
 </body>
 </html>
 
