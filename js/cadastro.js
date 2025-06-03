@@ -5,7 +5,7 @@ document.getElementById("cadastro-form").addEventListener("submit", function(e) 
     const username = document.getElementById("user-name").value;
     const email = document.getElementById("email").value;
     const senha = document.getElementById("senha").value;
-    const foto = document.getElementById("foto").value || "../img/default-avatar.png";
+    const foto = document.getElementById("foto").value || "img/default-avatar.png";
     const assinatura = "Nenhuma"
 
     const usuario = { nome, username, email, senha, foto, assinatura };
